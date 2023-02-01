@@ -1,9 +1,10 @@
 import React from 'react';
+import UserSections from '../Components/UserSections/UserSections';
 
 const Home = () => {
 	return (
 		<div>
-			<h1>Home section.</h1>
+			<UserSections/>
 		</div>
 	);
 };

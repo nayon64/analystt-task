@@ -1,5 +1,4 @@
-
-.main{
+.main {
   background-color: #F4F7FC;
   min-height: 100vh;
   display: flex;
@@ -7,15 +6,22 @@
   justify-content: space-between;
 }
 
-.text-black{
+.text-black {
   color: black;
 }
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
+}
 
-nav,footer{
+nav,
+footer {
   background-color: white;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,14 +29,17 @@ nav,footer{
   margin: 0 auto;
   padding: 0 20px;
 }
-.logo{
-  color:#FB3E3E;
+
+.logo {
+  color: #FB3E3E;
   cursor: pointer;
 }
-.menus{
+
+.menus {
   list-style: none;
 }
-.menus a{
+
+.menus a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
@@ -40,11 +49,86 @@ nav,footer{
   border-radius: 5px;
 }
 
-.menus a:hover{
-background-color: #f95050;
-color: white;
+.menus a:hover {
+  background-color: #f95050;
+  color: white;
 }
-.active{
+
+.active {
+  background-color: #f95050;
+  color: white;
+}
+
+.user-section {
+  max-width: 1445px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px 40px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-card h3,
+h4,
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.details-btn {
+  background-color: #f95050;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 15px;
+  color: white;
+  cursor: pointer;
+}
+.details-section{
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 5px 5px 30px rgb(213, 211, 211);
+}
+.details-section> div{
+  min-width: 400px;
+}
+.details-section>div h4{
+  margin-top: 20px;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination p{
+  padding: 2px 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all .5s ease-in;
+  border-radius: 3px;
+}
+
+.pagination p:hover{
+  background-color: #f95050;
+  color: white;
+}
+
+.pagination button{
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.pagination .selected{
   background-color: #f95050;
   color: white;
 }
