@@ -5,12 +5,12 @@ import Navbar from '../../Shared/Novbar/Navbar';
 
 const Main = () => {
 	return (
-		<div>
-			<Navbar />
-			<Outlet />
-			<Footer />
-		</div>
-	);
+    <div className=" main">
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </div>
+  );
 };
 
 export default Main;
