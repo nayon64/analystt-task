@@ -21,8 +21,6 @@ const UserSections = () => {
 	})
   }, [currentPage]);
 	
-console.log(currentPage)
-	
 
 	const pages = Math.ceil(totalData / 3);
 
