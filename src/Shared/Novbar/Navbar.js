@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaBars, FaStream } from "react-icons/fa";
 
 const Navbar = () => {
+	const [isOpen,setIsOpen]=useState(false)
 
 	const routes = [
 		{
@@ -35,12 +37,17 @@ const Navbar = () => {
 
 	return (
     <nav>
-      <div className='navbar'>
-		
-				<h2 className='logo'>ANALAYSTT.OI</h2>
-				<ul className='menus'>
-					{menus}
-			</ul>
+      <div className="navbar">
+        <h2 className="logo">ANALAYSTT.OI</h2>
+        <div className="humburgurs">
+          {isOpen ? (
+            <FaStream onClick={() => setIsOpen(false)} />
+          ) : (
+            <FaBars onClick={() => setIsOpen(true)} />
+          )}
+        </div>
+        <ul className="menus">{menus}</ul>
+        {isOpen && <ul className="humbuger-menus">{menus}</ul>}
       </div>
     </nav>
   );
